@@ -60,10 +60,9 @@ if [ -n "${INPUT_ENV_FILE}" ]; then
   # export ENV_FILE="${INPUT_ENV_FILE}"
 fi
 
-if [ -n "${INPUT_PULL}" == "true" ]; then
+if [ "${INPUT_PULL}" == "true" ]; then
   echo -e "\u001b[36mRestoring Stack: \u001b[37;1m${INPUT_NAME}"
   docker compose -f "${INPUT_FILE}" pull
-  sleep 5
 fi
 
 echo -e "\u001b[36mDeploying Stack: \u001b[37;1m${INPUT_NAME}"
