@@ -32,10 +32,6 @@ inputs:
   env_file:
     description: "Environment File"
     required: false
-  pull:
-    description: "Run compose pull bevor deploy"
-    required: false
-    default: false
 
 runs:
   using: "docker"
