@@ -32,6 +32,10 @@ inputs:
   env_file:
     description: "Environment File"
     required: false
+  compose:
+    description: "Use compose"
+    required: false
+    default: false
 
 runs:
   using: "docker"
